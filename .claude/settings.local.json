@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter analyze *)",
+      "Bash(dart run *)",
+      "Bash(flutter build *)",
+      "Bash(cd \"C:\\\\Users\\\\kaane\\\\Downloads\" && echo \"=== FILE SIZES ===\" && wc -l _screens_extract/screens/*.dart _theme_extract/theme/*.dart)",
+      "Bash(python -)",
+      "Bash(mkdir -p /tmp/gbchars)",
+      "Bash(unzip -o \"Girlband karakterler.zip\" -d /tmp/gbchars)",
+      "Read(//tmp/**)",
+      "Bash(cd \"C:/FlutterProjects/GirlbandSim/girlband_sim\" && mkdir -p assets/idols && cp /tmp/gbchars/\"Girlband karakterler\"/*.png assets/idols/ && ls assets/idols | sort -n | head -5 && echo \"...\" && ls assets/idols | wc -l && echo \"files copied\")",
+      "Bash(grep -n \"_duetTitles\\\\|_resolveDuet\\\\|feat. \\\\${rival\" lib/domain/game_logic/event_engine.dart)",
+      "Bash(flutter pub *)",
+      "Bash(grep -n 'Text\\('\\\\''$wallet ₺'\\\\''' lib/main.dart)",
+      "PowerShell(flutter analyze --no-fatal-infos 2>&1)",
+      "PowerShell(flutter build apk --debug 2>&1)",
+      "PowerShell(flutter build apk --release 2>&1)",
+      "PowerShell($f = \"build\\\\app\\\\outputs\\\\flutter-apk\\\\app-release.apk\"; $i = Get-Item $f; \"Dosya: $\\($i.FullName\\)\"; \"Boyut: {0:N1} MB\" -f \\($i.Length/1MB\\); \"Tarih: $\\($i.LastWriteTime\\)\")"
+    ]
+  }
+}
